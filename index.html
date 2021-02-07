@@ -1,6 +1,7 @@
 <html>
 
-function getTicker(url) {  
+<script>
+  function getTicker(url) {  
   
 const queryString = window.location.search;
 console.log(queryString);
@@ -10,6 +11,7 @@ const urlParams = new URLSearchParams(queryString);
 const product = urlParams.get('Ticker')
 console.log(Ticker); 
 }  
+  </script>
 
 <!--TradingView Widget BEGIN-->
 <div class="tradingview-widget-container">
