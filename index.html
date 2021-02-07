@@ -12,6 +12,8 @@ console.log(Ticker);
 
 </script>
   
+length test  
+  
 <!--TradingView Widget BEGIN-->
 <div class="tradingview-widget-container">
   <div id="tradingview_65f9b"></div>
@@ -36,7 +38,7 @@ console.log(Ticker);
   "range": "12M",
   "allow_symbol_change": false,
   "studies": [
-    "MASimple@tv-basicstudies", "MASimple@tv-basicstudies", ["MASimple@tv-basicstudies" {"len": "20}]
+    "MASimple@tv-basicstudies", "MASimple@tv-basicstudies", ["MASimple@tv-basicstudies" {len = input(20, minval=1, title="Length")}]
   ],
   "container_id": "tradingview_65f9b"
 }
