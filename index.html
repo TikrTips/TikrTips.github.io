@@ -1,7 +1,6 @@
 <html>
 
 <script>
-  function getTicker(url) {  
   
 const queryString = window.location.search;
 console.log(queryString);
@@ -9,14 +8,25 @@ console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
   
 const Ticker = urlParams.get('Ticker')
-console.log(Ticker); 
-}  
+console.log(Ticker);  
+  
+  </script>
+  
+  <script type="text/javascript">
+    var number = 123;
   </script>
   
     <h1>
       Ticker Symbol:
       <script type="text/javascript">
         document.write(Ticker)
+      </script>
+    </h1>
+  
+      <h1>
+      Number:
+      <script type="text/javascript">
+        document.write(number)
       </script>
     </h1>
 
