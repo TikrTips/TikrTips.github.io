@@ -1,4 +1,13 @@
 <html>
+  
+const queryString = window.location.search;
+console.log(queryString);
+
+const urlParams = new URLSearchParams(queryString);
+  
+const product = urlParams.get('Ticker')
+console.log(Ticker); 
+  
 
 <!--TradingView Widget BEGIN-->
 <div class="tradingview-widget-container">
